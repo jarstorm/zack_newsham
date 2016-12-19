@@ -1,0 +1,13 @@
+<template name="messages_template">
+    <p>Messages</p>
+    <form class="new-message">
+        <input type="text" />
+        <button>Add message</button>
+    </form>
+    <ul>
+        {{#each messages}} {{> message}} {{/each}}
+    </ul>
+</template>
+<template name="message">
+    <li>{{text}}</li>
+</template>
