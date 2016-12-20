@@ -1,7 +1,7 @@
 <template name="messages_template">
     <p>Messages</p>
     <form class="new-message">
-        <input type="text" />
+        <input type="text" name="text" placeholder="Message text" />
         <button>Add message</button>
     </form>
     <ul>
@@ -9,5 +9,7 @@
     </ul>
 </template>
 <template name="message">
-    <li>{{text}}</li>
+    <li>{{text}}
+        <button class="delete_message">Delete</button>
+    </li>
 </template>
