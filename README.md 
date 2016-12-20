@@ -1,3 +1,6 @@
 After download the code just run:
 $> npm install
 $> meteor
+
+For testing purposes:
+$> meteor test --full-app --driver-package practicalmeteor:mocha
